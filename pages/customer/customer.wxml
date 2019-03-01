@@ -1,0 +1,35 @@
+<!--index.wxml -->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+    <!-- 头部模块 -->
+    <view class="headModel">
+        <view class="headOuter">
+            <view class="row1">
+                <text>近30天新顾客数{{headModel.newCustomerNum}}，消费顾客总数</text>
+                <image src="../../images/ludan/center.png"></image>
+            </view>
+            <view class="row2">
+                <text>{{headModel.customerCount}}</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- 统计模块 -->
+    <view class="totalModel">
+        <view class="totalTitle">
+            <image src="{{totalModel.img}}"></image>
+            <text>{{totalModel.title}}</text>
+        </view>
+        <view class="totalOuter">
+            <view class="totalInter">
+                <view class="row" wx:for-items="{{totalModel.list}}" wx:key="index">
+                    <view class="text1">{{item.title}}</view>
+                    <view class="text2">{{item.customerCount}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!--底部提示模块-->
+    <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">没有更多啦</view>
+</view>

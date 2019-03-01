@@ -1,0 +1,58 @@
+<!--pages/cust-count/cust-count.wxml-->
+<!-- <text>pages/cust-count/cust-count.wxml</text>  -->
+<!--  -->
+<!-- {{currentItem=='month'?'border-bottom':''}} -->
+<view class='container'>
+  <view class='header'>
+    <view class="nav {{type=='day'?'back-color-white':''}}" data-type='day' data-reportHidden='' bindtap='reportChoose'>
+      <view class="{{type=='day'?'border-bottom':''}}">日报</view>
+    </view>
+    <view class="nav {{type=='month'?'back-color-white':''}}" data-type='month' data-reportHidden='true' bindtap='reportChoose'>
+      <view class="{{type=='month'?'border-bottom':''}}">月报</view>
+    </view>
+  </view>
+  <view class='content' hidden="{{reportHidden}}">
+    <view class='items'>
+      <view class='title'>9月28日新增客资</view>
+      <view class='count'>425</view>
+      <view class='info'>员工报备客资<view class='num1'>300</view>成交客资<view class='num2'>20</view>报备人数<view class='num3'>30</view></view>
+    </view>
+    <view class='items'>
+      <view class='title'>9月27日新增客资</view>
+      <view class='count'>425</view>
+      <view class='info'>员工报备客资<view class='num1'>60</view>成交客资<view class='num2'>40</view>报备人数<view class='num3'>30</view></view>
+    </view>
+    <view class='items'>
+      <view class='title'>9月28日新增客资</view>
+      <view class='count'>425</view>
+      <view class='info'>员工报备客资<view class='num1'>300</view>成交客资<view class='num2'>20</view>报备人数<view class='num3'>30</view></view>
+    </view>
+    <view class='items'>
+      <view class='title'>9月28日新增客资</view>
+      <view class='count'>425</view>
+      <view class='info'>员工报备客资<view class='num1'>300</view>成交客资<view class='num2'>20</view>报备人数<view class='num3'>30</view></view>
+    </view>
+  </view>
+  <view class='content' hidden="{{reportHidden?'':true}}">
+    <view class='items'>
+      <view class='title'>2018年9月新增客资</view>
+      <view class='count'>425</view>
+      <view class='info'>员工报备客资<view class='num1'>300</view>成交客资<view class='num2'>20</view>报备人数<view class='num3'>30</view></view>
+    </view>
+    <view class='items'>
+      <view class='title'>2018年8月新增客资</view>
+      <view class='count'>425</view>
+      <view class='info'>员工报备客资<view class='num1'>60</view>成交客资<view class='num2'>40</view>报备人数<view class='num3'>30</view></view>
+    </view>
+    <view class='items'>
+      <view class='title'>2018年7月新增客资</view>
+      <view class='count'>425</view>
+      <view class='info'>员工报备客资<view class='num1'>300</view>成交客资<view class='num2'>20</view>报备人数<view class='num3'>30</view></view>
+    </view>
+    <view class='items'>
+      <view class='title'>2018年6月新增客资</view>
+      <view class='count'>425</view>
+      <view class='info'>员工报备客资<view class='num1'>300</view>成交客资<view class='num2'>20</view>报备人数<view class='num3'>30</view></view>
+    </view>
+  </view>
+</view>

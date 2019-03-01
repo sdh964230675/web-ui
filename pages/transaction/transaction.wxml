@@ -1,0 +1,32 @@
+<view class='container'>
+  <!-- 切换模块 -->
+  <view class='header'>
+    <view class="nav {{type=='day'?'back-color-white':''}}" data-type='day' data-reportHidden='' bindtap='reportChoose'>
+      <view class="{{type=='day'?'border-bottom':''}}">日报</view>
+    </view>
+    <view class="nav {{type=='month'?'back-color-white':''}}" data-type='month' data-reportHidden='true' bindtap='reportChoose'>
+      <view class="{{type=='month'?'border-bottom':''}}">月报</view>
+    </view>
+  </view>
+
+  <!-- 日报 -->
+  <view class='content' hidden="{{reportHidden}}">
+    <view class='items' wx:for-items="{{dateList}}" wx:key="index">
+      <view class='title'>{{item.date}}会员充值{{item.memberPay}}元，总营收</view>
+      <view class='count'>￥{{item.countMoney}}</view>
+      <view class='info'>交易笔数<view class='num1'>{{item.payNum}}</view>支付人数<view class='num2'>{{item.payPeopleNum}}</view></view>
+    </view>
+  </view>
+
+  <!-- 月报 -->
+  <view class='content' hidden="{{reportHidden?'':true}}">
+    <view class='items' wx:for-items="{{monthList}}" wx:key="index">
+      <view class='title'>{{item.date}}会员充值{{item.memberPay}}元，总营收</view>
+      <view class='count'>￥{{item.countMoney}}</view>
+      <view class='info'>交易笔数<view class='num1'>{{item.payNum}}</view>支付人数<view class='num2'>{{item.payPeopleNum}}</view></view>
+    </view>
+  </view>
+
+  <!--底部提示模块-->
+  <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">没有更多啦</view>
+</view>

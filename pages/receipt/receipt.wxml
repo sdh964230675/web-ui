@@ -1,0 +1,20 @@
+<view class="container">
+  <view class='header'>
+    <view class='left'>
+      <view class='today'>今日</view>
+      <view>成交{{10}}笔，代付款{{20}}笔。</view>
+    </view>
+    <view class='right'>￥{{1233.00}}</view>
+  </view>
+  <view class="content" wx:for-items="{{boss}}" wx:key="{{index}}" data-index="{{index}}">
+    <view class='person'>
+      <view class='img'></view>
+      <view class='user'>
+        <view class='name'>{{item.name}}</view>
+        <view class='time'>09:35</view>
+      </view>
+    </view>
+    <view class='job'>{{item.job}}</view>
+    <view class='money'>+{{item.money}}</view>
+  </view>
+</view>

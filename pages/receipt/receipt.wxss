@@ -1,0 +1,78 @@
+/* pages/receipt/receipt.wxss */
+page{
+  height: 100%;
+  width: 100%;
+}
+.container{
+    background-color: #f5f5f9;
+    justify-content: initial;
+}
+.header{
+  display: flex;
+  height: 124rpx;
+  width: 100%;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-bottom: 4.68rpx #d1d1d1 solid;
+}
+.header .today{
+  font-size: 28.08rpx;
+  display: block;
+}
+.header .left{
+  margin-left: 49.14rpx;
+}
+.header .left view:nth-of-type(2){
+  color: #444444;
+  font-size: 21.06rpx;
+}
+.header .right{
+  margin-right: 32.76rpx;
+  margin-left: auto;
+	font-size: 51.48rpx;
+	line-height: 88.92rpx;
+	color: #69c655;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  border-bottom: 4.68rpx #dedede solid;
+}
+.content view{
+  height: 128.7rpx;
+  display: flex;
+  align-items: center;
+}
+
+.content .money{
+  margin-left: auto;
+  margin-right: 49.14rpx;
+  font-size: 37.44rpx;
+	line-height: 88.92rpx;
+	color: #686c9d;
+}
+.content .person{
+  width: 280rpx;
+  margin-left: 42.12rpx;
+}
+.content .user{
+  flex-flow: wrap;
+  margin-left: 25.74rpx;
+  height: 50%;
+}
+.content .name{
+  font-size: 23.4rpx;
+  height: 23.4rpx;
+}
+.content .time{
+  color: #a3a3a3;
+  font-size: 21.06rpx;
+  height: 21.06rpx;
+  width: 50%;
+}
+.content .img{
+  width: 63.18rpx;
+	height: 63.18rpx;
+  background-color: red;
+}

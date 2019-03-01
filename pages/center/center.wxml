@@ -1,0 +1,21 @@
+<!--pages/center/center.wxml-->
+<!-- <text>pages/center/center.wxml</text> -->
+<view class='container'>
+  <view class='header'>
+    <view class='nav1'>
+      <image src='../../images/ludan/top.png' style='width:100%;height:234rpx;'></image>
+      <view class='title'>嘉兴薇朵宝贝儿童摄影</view>
+      <view class='subhead'>还剩<view class='day'>120</view>天到期</view>
+    </view>
+    <view class='nav2'>
+      <view class='title'>今日提现金额</view>
+      <view class='count'>¥1,425.00</view>
+      <view class='info'>账户余额<view class='num'>¥2500.00</view></view>
+      <image src='../../images/ludan/next.png' class='next'></image>
+    </view>
+  </view>
+  <!-- <view class='content'>
+    <view class='nav1'><view class='title'></view>
+    <view class='info'></view></view>
+  </view> -->
+</view> 

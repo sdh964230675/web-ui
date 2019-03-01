@@ -1,0 +1,26 @@
+<!--pages/customer-capital/customer-capital.wxml-->
+<!-- <text>pages/customer-capital/customer-capital.wxml</text> -->
+<view class='container'>
+  <view class='header'>
+    <view class='add-kezi'>今日新增客资数</view>
+    <view class='add-num'>200</view>
+    <view class='kezi-num'>未分配客资数<view class='num'>120</view>提交报备的员工数<view class='num'>40</view></view>
+  </view>
+  <view class='content'>
+    <view class='items' bindtap='report'>
+      <image src='../../images/ludan/kezifenxi/baobei.png' class='img'></image>
+      <view>近30天员工报备榜</view>
+      <image src='../../images/ludan/next.png' class='next'></image>
+    </view>
+    <view class='items' data-='2' bindtap='volume'>
+      <image src='../../images/ludan/kezifenxi/chengjiao.png' class='img'></image>
+      <view>近30天客资成交榜</view>
+      <image src='../../images/ludan/next.png' class='next'></image>
+    </view>
+    <view class='items' bindtap='custCount'>
+      <image src='../../images/ludan/kezifenxi/kezitongji.png' class='img'></image>
+      <view>客资统计</view>
+      <image src='../../images/ludan/next.png' class='next'></image>
+    </view>
+  </view>
+</view>

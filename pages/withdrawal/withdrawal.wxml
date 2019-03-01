@@ -1,0 +1,49 @@
+<!--index.wxml -->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+    <!-- 头部模块 -->
+    <view class="headModel">
+        <view class="headOuter">
+            <view class="row1">
+                <text>昨日创客交易额</text>
+                <image class="wenhao" src="../../images/ludan/center.png"></image>
+            </view>
+            <view class="row2">
+                <text>￥{{headModel.yesdayMoney}}</text>
+            </view>
+            <view class="row3">
+                <text class="text1">待结算</text>
+                <text class="text2">{{headModel.settlementMoney}}</text>
+                <text class="text1" style="margin-left: 10%;">今日提现</text>
+                <text class="text2">{{headModel.todayMoney}}</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- 提现记录table -->
+    <view class="withdrawalTable">
+        <view class="withdrawalOuter">
+            <view class="title">
+                <text>提现记录</text>
+                <image src="../../images/ludan/center.png"></image>
+            </view>
+            <view class='header'>
+                <view style="width:25%;">日期</view>
+                <view style="width:25%;">申请提现金额</view>
+                <view style="width:25%;">提现手续费</view>
+                <view style="width:25%;">转介绍金额</view>
+            </view>
+            <view class='content'>
+                <view class='rows' wx:for-items="{{withdList}}" wx:key="index">
+                    <view style='font-size:11px;width: 25%;'>{{item.date}}</view>
+                    <view class='staff' style="width:25%;">{{item.widthdMoney}}</view>
+                    <view style='font-size:13px;width:25%;'>{{item.proceduresMoney}}</view>
+                    <view style='font-size:13px;width:25%;'>{{item.status}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!--底部提示模块-->
+    <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">没有更多啦</view>
+</view>

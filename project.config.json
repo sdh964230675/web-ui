@@ -1,0 +1,103 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": false,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx4eb4396d4f56b6fc",
+	"projectname": "%E5%8D%A4%E8%9B%8B%E5%8A%A9%E6%89%8B",
+	"scripts": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 10,
+			"list": [
+				{
+					"id": -1,
+					"name": "卤蛋助手-主页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "卤蛋助手",
+					"pathName": "pages/start/start",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "卤蛋助手-授权",
+					"pathName": "pages/auth/auth",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "收款记录",
+					"pathName": "pages/receipt/receipt",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客资分析",
+					"pathName": "pages/customer-capital/customer-capital",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "客资统计",
+					"pathName": "pages/center/center",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "经营中心",
+					"pathName": "pages/manageMent/manageMent",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "创客数据分析",
+					"pathName": "pages/createCus/createCus",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "顾客分析",
+					"pathName": "pages/customer/customer",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "交易分析",
+					"pathName": "pages/transaction/transaction",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "提现记录",
+					"pathName": "pages/withdrawal/withdrawal"
+				}
+			]
+		}
+	}
+}

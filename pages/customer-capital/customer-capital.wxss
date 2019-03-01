@@ -1,0 +1,65 @@
+/* pages/customer-capital/customer-capital.wxss */
+page{
+  height: 100%;
+  width: 100%;
+}
+.container{
+  justify-content: initial;
+}
+.header{
+  height: 327.6rpx;
+  width: 100%;
+  padding-left: 67.86rpx;
+  border-bottom: 4.68rpx #dbdbde solid;
+}
+.header .kezi-num{
+  font-size: 21.06rpx;
+  color: #9fa1b2;
+	opacity: 0.8;
+  display: flex;
+  align-items: center;
+}
+.header .kezi-num .num{
+  color: #424889;
+	opacity: 0.8;
+  font-size: 30.42rpx;
+  font-family: MicrosoftYaHei;
+  margin: 0 56.16rpx 0 14.04rpx;
+}
+.header .add-num{
+  font-size: 72.54rpx;
+  color: #686c9d;
+  margin-left: 4.68rpx;
+}
+.header .add-kezi{
+  font-size: 28.08rpx;
+  margin-left: 2.34rpx;
+}
+
+.content{
+  background-color: #fbfcff;
+  width: 100%;
+  height: 100%;
+  padding-top: 39.78rpx;
+  border-top: 11.7rpx solid #efeff0;
+}
+.content .items{
+  display: flex;
+  height: 147.42rpx;
+  border-bottom: #dedede 2.34rpx solid;
+  align-items: center;
+  margin:0 79.56rpx 0 70.2rpx;
+}
+.content .items .next{
+  margin-left: auto;
+  height: 39.78rpx;
+  width: 39.78rpx;
+}
+.content .items .img{
+  height: 79.56rpx;
+  width: 79.56rpx;
+  margin:7.02rpx 39.78rpx 0 18.72rpx;
+}
+
+
+

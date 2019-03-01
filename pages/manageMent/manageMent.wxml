@@ -1,0 +1,43 @@
+<!--index.wxml -->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+    <!-- 头部模块 -->
+    <view class="headModel">
+        <view class="headOuter">
+            <view class="row1">
+                <text>昨日充值金额 {{headModel.addMoney}}元，昨日总营收</text>
+                <image src="../../images/ludan/center.png"></image>
+            </view>
+            <view class="row2">
+                <text>￥{{headModel.sumMoney}}</text>
+            </view>
+            <view class="row3">
+                <text class="text1">交易笔数</text>
+                <text class="text2">{{headModel.payNum}}</text>
+                <text class="text1" style="margin-left: 10%;">支付人数</text>
+                <text class="text2">{{headModel.payManNum}}</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- 菜单模块 -->
+    <view class="menuModel">
+        <view class="menuOuter">
+            <view class="menuRow1" catchtap="transaction">
+                <image class="mrImg1" src="../../images/ludan/fenxi.png"></image>
+                <text>交易分析</text>
+                <image class="mrImg3" src="../../images/ludan/next.png"></image>
+            </view>
+            <view class="menuRow1" catchtap="createCus">
+                <image class="mrImg1" src="../../images/ludan/data2.png"></image>
+                <text>创客数据分析</text>
+                <image class="mrImg2" src="../../images/ludan/next.png"></image>
+            </view>
+            <view class="menuRow1" catchtap="customer">
+                <image class="mrImg1" src="../../images/ludan/customer.png"></image>
+                <text>顾客分析</text>
+                <image class="mrImg3" src="../../images/ludan/next.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

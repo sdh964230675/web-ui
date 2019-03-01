@@ -1,0 +1,97 @@
+<!--index.wxml -->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+    <!-- 头部模块 -->
+    <view class="headModel">
+        <view class="headOuter">
+            <view class="row1">
+                <text>昨日充值金额 {{headModel.addMoney}}元，昨日总营收</text>
+                <image src="../../images/ludan/center.png"></image>
+            </view>
+            <view class="row2">
+                <text>￥{{headModel.sumMoney}}</text>
+            </view>
+            <view class="row3">
+                <text class="text1">交易笔数</text>
+                <text class="text2">{{headModel.payNum}}</text>
+                <text class="text1" style="margin-left: 10%;">支付人数</text>
+                <text class="text2">{{headModel.payManNum}}</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- 积分模块 -->
+    <view class="integralModel">
+        <view class="integralOuter">
+            <view class="integralOne">
+                <view class="integralText1">{{integralModel.grantIntegral}}</view>
+                <view class="integralText2">历史累计发放积分</view>
+            </view>
+            <view class="integralTwo">
+                <view class="integralText1">{{integralModel.empIntegral}}</view>
+                <view class="integralText2">员工积分余额</view>
+            </view>
+            <view class="integralTre">
+                <view class="integralText1">{{integralModel.memberIntegral}}</view>
+                <view class="integralText2">会员积分余额</view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 切换table模块 -->
+    <view class="changeModel">
+        <view class="changeOuter">
+            <view class="changeLeft" style="background:{{memberBG}};" catchtap="selectMember">
+                <text>会员转介绍TOP20</text>
+            </view>
+            <view class="changeRight" style="background:{{empBG}};" catchtap="selectEmp">
+                <text>员工业绩TOP20</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- 会员table -->
+    <view class="memberTable" wx:if="{{memberShow==true}}">
+        <view class='header'>
+            <view style="width:20%;">排序</view>
+            <view style="width:40%;">会员</view>
+            <view style="width:20%;">转介绍单量</view>
+            <view style="width:20%;">转介绍金额</view>
+        </view>
+        <view class='content'>
+            <view class='rows' wx:for-items="{{memberList}}" wx:key="index">
+                <view style='font-size:11px;width: 20%;'>{{index+1}}</view>
+                <view class='staff' style="width:40%;">
+                    <image src='{{item.headImage}}'></image>{{item.name}}
+                </view>
+                <view style='font-size:13px;width:20%;'>{{item.num}}</view>
+                <view style='font-size:13px;width:20%;'>{{item.money}}</view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 员工业绩table -->
+    <view class="empTable" wx:if="{{empShow==true}}">
+        <view class='header'>
+            <view style="width:15%;">排序</view>
+            <view style="width:40%;">会员</view>
+            <view style="width:20%;">粉丝数</view>
+            <view style="width:15%;">粉丝订单量</view>
+            <view style="width:15%;">订单金额</view>
+        </view>
+        <view class='content'>
+            <view class='rows' wx:for-items="{{empList}}" wx:key="index">
+                <view style='font-size:11px;width: 15%;'>{{index+1}}</view>
+                <view class='staff' style="width:40%;">
+                    <image src='{{item.headImage}}'></image>{{item.name}}
+                </view>
+                <view style='font-size:13px;width:15%;'>{{item.fansNum}}</view>
+                <view style='font-size:13px;width:15%;'>{{item.num}}</view>
+                <view style='font-size:13px;width:15%;'>{{item.money}}</view>
+            </view>
+        </view>
+    </view>
+
+    <!--底部提示模块-->
+    <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">没有更多啦</view>
+</view>

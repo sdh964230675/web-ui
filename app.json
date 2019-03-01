@@ -1,0 +1,90 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/goods-details/index",
+    "pages/shop-cart/index",
+    "pages/to-pay-order/index",
+    "pages/select-address/index",
+    "pages/address-add/index",
+    "pages/order-list/index",
+    "pages/order-details/index",
+    "pages/wuliu/index",
+    "pages/mycoupons/index",
+    "pages/my/index",
+    "pages/notice/show",
+    "pages/recharge/index",
+    "pages/withdraw/index",
+    "pages/kanjia/index",
+    "pages/authorize/index",
+    "pages/score-excharge/index",
+    "pages/auth/auth",
+    "pages/receipt/receipt",
+    "pages/customer-capital/customer-capital",
+    "pages/manageMent/manageMent",
+    "pages/createCus/createCus",
+    "pages/volume/volume",
+    "pages/report/report",
+    "pages/center/center",
+    "pages/cust-count/cust-count",
+    "pages/customer/customer",
+    "pages/transaction/transaction",
+    "pages/withdrawal/withdrawal"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/ludan/data.png",
+        "selectedIconPath": "images/ludan/data.png",
+        "text": "经营概况"
+      },
+      {
+        "pagePath": "pages/manageMent/manageMent",
+        "iconPath": "images/ludan/fenxi-min.png",
+        "selectedIconPath": "images/ludan/fenxi-min.png",
+        "text": "经营中心"
+      },
+      {
+        "pagePath": "pages/receipt/receipt",
+        "iconPath": "images/ludan/shoukuan-min.png",
+        "selectedIconPath": "images/ludan/shoukuan-min.png",
+        "text": "收款记录"
+      },
+      {
+        "pagePath": "pages/customer-capital/customer-capital",
+        "iconPath": "images/ludan/yonghuliebiao-min.png",
+        "selectedIconPath": "images/ludan/yonghuliebiao-min.png",
+        "text": "客资分析"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "images/ludan/zhanghao-min.png",
+        "selectedIconPath": "images/ludan/zhanghao-min.png",
+        "text": "账号中心"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "functionalPages": true,
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "resizable": true
+}

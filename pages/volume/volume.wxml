@@ -1,0 +1,34 @@
+<!--pages/charts/charts.wxml-->
+<!-- <text>pages/charts/charts.wxml</text> -->
+<view class='container'>
+  <view class='header'>
+    <view>排序</view>
+    <view style='width:40%'>员工</view>
+    <view>客资成交量</view>
+  </view>
+  <view class='content'>
+    <view class='rows'>
+      <view style='font-size:11px;'>1</view>
+      <view class='staff'><image src='../../images/ludan/kezifenxi/chengjiao.png'></image>UFO先生</view>
+      <view style='font-size:13px;'>1099</view> 
+    </view>
+    <view class='rows'>
+      <view style='font-size:11px;'>2</view>
+      <view class='staff'><image src='../../images/ludan/kezifenxi/chengjiao.png'></image>JZM食物摄影</view>
+      <view style='font-size:13px;'>1099</view> 
+    </view>
+    <view class='rows'>
+      <view style='font-size:11px;'>3</view>
+      <view class='staff'><image src='../../images/ludan/kezifenxi/chengjiao.png'></image>UFO先生JZM食物摄影UFO先生JZM食物摄影</view>
+      <view style='font-size:13px;'>1099</view> 
+    </view>
+    <view class='rows'>
+      <view style='font-size:11px;'>4</view>
+      <view class='staff'><image src='../../images/ludan/kezifenxi/chengjiao.png'></image>JZM食物摄影UFO先生</view>
+      <view style='font-size:13px;'>1099</view> 
+    </view>
+  </view>
+  <!--底部提示模块-->
+    <view hidden="{{loadingMoreHidden ? false : true}}" class="more-goods">查看更多</view>
+    <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">没有更多啦</view>
+</view>

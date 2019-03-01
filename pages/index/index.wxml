@@ -1,0 +1,65 @@
+<!--index.wxml -->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+    <!--头部模块-->
+    <view class="head">
+        <view class="head-row">
+            <p class="head-text1">{{head.text1}}</p>
+            <p class="head-text2">¥{{head.text2}}</p>
+        </view>
+    </view>
+
+    <!--数据量模块-->
+    <view class="dataModel">
+        <view class="data1">
+            <view class="data-text1">{{dataModel.visitNum}}</view>
+            <view class="data-text2">首页访问人数</view>
+        </view>
+        <view class="column-line"></view>
+        <view class="data2">
+            <view class="data-text1">{{dataModel.newAddNum}}</view>
+            <view class="data-text2">新增客资</view>
+        </view>
+        <view class="column-line"></view>
+        <view class="data3">
+            <view class="data-text1">{{dataModel.addFansNum}}</view>
+            <view class="data-text2">公众号涨粉</view>
+        </view>
+    </view>
+    
+    <!-- 平台公告 -->
+    <view class="noticeModel">
+        <view class="noticeHead">
+            <image class="noticeImg" src="../../images/ludan/notice.png"></image>
+            <view class="yuan">{{noticeModel.length}}</view>
+            <text class="noticeText">平台公告</text>
+        </view>
+        <view class="noticeRow1" wx:for-items="{{noticeModel}}" wx:key="index">
+            <view catchtap="noticeNextTo" data-id="{{item.id}}" data-text="{{item.text}}" data-date="{{item.date}}">
+                <text class="nRowText1">{{item.text}}</text>
+                <view class="nRowText2">{{item.date}}</view>
+                <image class="nRowImg" src="../../images/ludan/next.png"></image>
+            </view>
+        </view>
+    </view>
+
+    <!-- 最新动态模块 -->
+    <view class="newModel">
+        <view class="newHead">
+            <image class="newImg" src="../../images/ludan/new.png"></image>
+            <text class="newText">最新动态</text>
+        </view>
+        <view>
+            <swiper wx:if="{{newList.length>0}}" class="new_swiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+                <block wx:for-items="{{newList}}" wx:key="index">
+                    <swiper-item>
+                        <image catchtap="tapBanner" data-id="{{item.id}}" src="{{item.picUrl}}" class="swiperImg"/>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+
+    <!--底部提示模块-->
+    <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">没有更多啦</view>
+</view>
